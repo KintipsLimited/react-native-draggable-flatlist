@@ -109,7 +109,7 @@ class SortableFlatList extends Component {
           const { horizontal } = this.props
           this._move = horizontal ? moveX : moveY
         },
-        useNativeDriver: true
+        useNativeDriver: false
       }),
       onPanResponderTerminationRequest: ({ nativeEvent }, gestureState) => false,
       onPanResponderRelease: () => {
